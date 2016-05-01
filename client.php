@@ -5,13 +5,13 @@
  * 
  */
 
-$user_name = 'laoyuan'; //your username
+$user_name = 'Laoyuan'; //your username
 $pic_key = '6d23630b57c878a4b3d01215254dd825'; //get it on http://ilogme.com/u/settings
 $per_seconds = 40;  //how many seconds to take a pic 
 $width = 480;  //width of pic
 $local_backup = true;  //save local copy or not
+$url_post = 'http://www.ilogme.com/' . $user_name . '/savepic';
 
-$url_post = 'http://localhost:8080/' . $user_name . '/savepic';
 $dir_pic = __DIR__ . '/' . 'pic';
 if (!file_exists($dir_pic)) {
     mkdir($dir_pic);
